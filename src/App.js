@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Gilbeos from "./Layout/Gilbeos";
+import ReactConcept from "./Layout/ReactConcept";
+import ReactRedux from "./Layout/ReactRedux";
+import ReactStart from "./Layout/ReactStart";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* 1장 */}
+      <ReactStart />
+      {/* 3장 */}
+      <ReactConcept />
+      {/* 6장 */}
+      {/* <ReactRedux /> */}
+      {/* gilbeos */}
+      <Gilbeos />
+    </>
   );
 }
 
