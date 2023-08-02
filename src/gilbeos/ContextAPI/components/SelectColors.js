@@ -2,7 +2,7 @@ import { ColorConsumer } from "../contexts/color";
 
 const colors = ["#f00", "orange", "#ff0", "#0f0", "#00f", "indigo", "violet"];
 
-const SelecColors = () => {
+const SelectColors = () => {
   return (
     <>
       <hr />
@@ -34,4 +34,4 @@ const SelecColors = () => {
     </>
   );
 };
-export default SelecColors;
+export default SelectColors;

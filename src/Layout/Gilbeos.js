@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import ColorBox from "../gilbeos/ContextAPI/components/ColorBox";
-import SelecColors from "../gilbeos/ContextAPI/components/SelectColors";
+import SelectColors from "../gilbeos/ContextAPI/components/SelectColors";
 import UseContextColorBox from "../gilbeos/ContextAPI/components/useContextColorBox";
 import { ColorProvider } from "../gilbeos/ContextAPI/contexts/color";
 import ImmerState from "../gilbeos/immer";
@@ -23,11 +23,9 @@ function Gilbeos() {
 
       {/* Provider를 사용할 때, 꼭 value값을 명시해줘야 오류가 나지 않는다. */}
       <ColorProvider>
-        <div>
-          <ColorBox />
-          <UseContextColorBox />
-          <SelecColors />
-        </div>
+        <ColorBox />
+        <UseContextColorBox />
+        <SelectColors />
       </ColorProvider>
     </>
   );
